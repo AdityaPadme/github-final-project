@@ -1,17 +1,36 @@
-# Simple Interest Calculator
+# 🌿 Paradise Nursery
 
-## Description
-This project contains a simple Bash script that calculates simple interest based on user input for principal, rate of interest, and time period. This is part of the final project for the Git and GitHub course.
+A beautiful, interactive e-commerce web application built with React for plant lovers. Paradise Nursery allows users to explore a variety of plants, learn about the nursery, and seamlessly add items to their shopping cart.
 
-## Formula
-Simple Interest is calculated using the following formula:
-Simple Interest = (Principal * Rate * Time) / 100
+## 🚀 Features
 
-Where:
-* **Principal** is the initial amount of money.
-* **Rate** is the annual interest rate.
-* **Time** is the time the money is invested or borrowed for, in years.
+* **Interactive Landing Page:** A welcoming home page with a background image, company introduction, and a "Get Started" button to navigate to the shop.
+* **Product Listing:** A clean grid layout displaying various plants, complete with images, names, and prices.
+* **State Management:** Utilizes Redux Toolkit to effectively manage the user's shopping cart state across the entire application.
+* **Shopping Cart Functionality:** Users can add items to their cart, with buttons dynamically updating to prevent duplicate additions.
+* **Responsive Design:** Styled with custom CSS to ensure a clean, modern, and user-friendly experience.
 
-## Usage
-To use this calculator, run the `simple-interest.sh` script in your terminal and provide the necessary inputs when prompted.
-//Update README with Simple Interest Calculator details
+## 🛠️ Technologies Used
+
+* **Frontend Framework:** React.js
+* **Build Tool:** Vite
+* **State Management:** Redux Toolkit (`@reduxjs/toolkit`, `react-redux`)
+* **Styling:** Pure CSS
+
+## 📁 Project Structure
+
+```text
+e-plantShopping/
+├── public/
+├── src/
+│   ├── AboutUs.jsx       # The company information section
+│   ├── App.jsx           # Main traffic controller (conditional rendering)
+│   ├── App.css           # Global styles and layout
+│   ├── CartItem.jsx      # Individual item display for the cart
+│   ├── CartSlice.jsx     # Redux slice for managing cart data
+│   ├── ProductList.jsx   # Grid displaying all available plants
+│   ├── main.jsx          # React entry point
+│   └── store.js          # Redux store configuration
+├── index.html
+├── package.json
+└── vite.config.js
